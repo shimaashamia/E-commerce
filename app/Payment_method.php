@@ -10,4 +10,9 @@ class Payment_method extends Model
     public $primaryKey = 'id';
     public $fillable = ['paymentCode', 'payment_Method_Describtion'];
     public $dates = ['created_at', 'updated_at'];
+
+
+    public function  Bidder(){
+        return $this->belongsTo('App\Bidder');
+    }
 }

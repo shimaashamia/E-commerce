@@ -10,4 +10,9 @@ class Product_Sold extends Model
     public $primaryKey = 'id';
     public $fillable = ['name', 'maxPrice', 'SellerName','bidderName'];
     public $dates = ['created_at', 'updated_at'];
+
+
+
+
+
 }
