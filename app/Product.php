@@ -26,4 +26,7 @@ class Product extends Model
     public function sold_product(){
         return $this->belongsToMany('');
     }
+     public function Category(){
+        return $this->belongsTo('App\Category');
+    }
 }
